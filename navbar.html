@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(209, 209, 209);
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color:red;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+      margin-left: auto;
+    }
+
+    .nav-links li {
+      margin: 15px 5px;
+    }
+
+    .nav-links li a {
+      display: block;
+      color: yellow;
+      text-align: center;
+      padding: 10px;
+      margin: 2px 10px;
+      text-decoration: none;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: underline;
+      color: yellow;
+    }
+
+    .logo {
+      color: yellow;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    .content {
+      padding: 50px 100px;
+    }
+    @media (max-width: 600px) {
+      body {
+        display: flex;
+      }
+      .navbar {
+        flex-direction: column;
+        height: auto;
+        width: 30%;
+        height: 100vh;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .logo {
+        margin: 10px 0;
+        text-align: center;
+      }
+      .content {
+        width: 70%;
+        display: inline;
+        padding: 1% 10%;
+        text-align: center;
+      }
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Logo</div>
+      <ul class="nav-links">
+          <li><a href="#services">Service</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum
+      deserunt corporis eligendi quo nemo repellat beatae fuga est delectus.
+      Neque maiores optio voluptate quibusdam consectetur, soluta qui quaerat!
+      Alias illo quia dignissimos nostrum corrupti pariatur qui, laborum vero
+      inventore dolor sunt, ab, doloremque vitae perspiciatis maiores ullam
+      error! Dolores illum et error laboriosam praesentium eligendi non quos
+      ipsum consequuntur vitae molestias, nihil pariatur, molestiae adipisci
+      omnis iure fugiat. Molestiae at provident vitae nostrum sit impedit
+      inventore ad amet est atque consectetur consequatur quas aliquam similique
+      perspiciatis aut ducimus beatae dolore ex distinctio maiores facilis, unde
+      officia? Sequi, sunt explicabo.
+    </div>
+  </body>
+</html>
